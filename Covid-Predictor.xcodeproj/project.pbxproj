@@ -11,6 +11,12 @@
 		4F2B92BB2891E295007AB7B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2B92BA2891E295007AB7B1 /* ContentView.swift */; };
 		4F2B92BD2891E296007AB7B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F2B92BC2891E296007AB7B1 /* Assets.xcassets */; };
 		4F2B92C02891E296007AB7B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F2B92BF2891E296007AB7B1 /* Preview Assets.xcassets */; };
+		4F2B92C72891E2B4007AB7B1 /* ViewStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2B92C62891E2B4007AB7B1 /* ViewStructs.swift */; };
+		4F2B92C92891E2C6007AB7B1 /* ImageProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2B92C82891E2C6007AB7B1 /* ImageProcessing.swift */; };
+		4F2B92CB2891E2D9007AB7B1 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2B92CA2891E2D9007AB7B1 /* ImagePicker.swift */; };
+		4F2B92CD2891E2E7007AB7B1 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2B92CC2891E2E7007AB7B1 /* HeaderView.swift */; };
+		4F2B92D02891E361007AB7B1 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4F2B92CF2891E361007AB7B1 /* Alamofire */; };
+		4F2B92D32891E3B1007AB7B1 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 4F2B92D22891E3B1007AB7B1 /* SwiftyJSON */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,10 @@
 		4F2B92BA2891E295007AB7B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4F2B92BC2891E296007AB7B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F2B92BF2891E296007AB7B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4F2B92C62891E2B4007AB7B1 /* ViewStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStructs.swift; sourceTree = "<group>"; };
+		4F2B92C82891E2C6007AB7B1 /* ImageProcessing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProcessing.swift; sourceTree = "<group>"; };
+		4F2B92CA2891E2D9007AB7B1 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		4F2B92CC2891E2E7007AB7B1 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +36,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F2B92D32891E3B1007AB7B1 /* SwiftyJSON in Frameworks */,
+				4F2B92D02891E361007AB7B1 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,6 +47,10 @@
 		4F2B92AC2891E295007AB7B1 = {
 			isa = PBXGroup;
 			children = (
+				4F2B92CC2891E2E7007AB7B1 /* HeaderView.swift */,
+				4F2B92CA2891E2D9007AB7B1 /* ImagePicker.swift */,
+				4F2B92C82891E2C6007AB7B1 /* ImageProcessing.swift */,
+				4F2B92C62891E2B4007AB7B1 /* ViewStructs.swift */,
 				4F2B92B72891E295007AB7B1 /* Covid-Predictor */,
 				4F2B92B62891E295007AB7B1 /* Products */,
 			);
@@ -83,6 +99,10 @@
 			dependencies = (
 			);
 			name = "Covid-Predictor";
+			packageProductDependencies = (
+				4F2B92CF2891E361007AB7B1 /* Alamofire */,
+				4F2B92D22891E3B1007AB7B1 /* SwiftyJSON */,
+			);
 			productName = "Covid-Predictor";
 			productReference = 4F2B92B52891E295007AB7B1 /* Covid-Predictor.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +131,10 @@
 				Base,
 			);
 			mainGroup = 4F2B92AC2891E295007AB7B1;
+			packageReferences = (
+				4F2B92CE2891E361007AB7B1 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				4F2B92D12891E3B1007AB7B1 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = 4F2B92B62891E295007AB7B1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +161,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F2B92C92891E2C6007AB7B1 /* ImageProcessing.swift in Sources */,
+				4F2B92CD2891E2E7007AB7B1 /* HeaderView.swift in Sources */,
 				4F2B92BB2891E295007AB7B1 /* ContentView.swift in Sources */,
+				4F2B92CB2891E2D9007AB7B1 /* ImagePicker.swift in Sources */,
+				4F2B92C72891E2B4007AB7B1 /* ViewStructs.swift in Sources */,
 				4F2B92B92891E295007AB7B1 /* Covid_PredictorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +298,7 @@
 				DEVELOPMENT_TEAM = DRK79MG3EB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera needed to look at COVID test";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +328,7 @@
 				DEVELOPMENT_TEAM = DRK79MG3EB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera needed to look at COVID test";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -339,6 +369,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4F2B92CE2891E361007AB7B1 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		4F2B92D12891E3B1007AB7B1 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4F2B92CF2891E361007AB7B1 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F2B92CE2891E361007AB7B1 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		4F2B92D22891E3B1007AB7B1 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F2B92D12891E3B1007AB7B1 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4F2B92AD2891E295007AB7B1 /* Project object */;
 }
